@@ -1,0 +1,1280 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+nav {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+/* Desktop */
+
+@media (min-width: 600px) {
+  /* Navbar Start */
+  .navbar-item {
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+
+  .navbar-item ul li {
+    display: inline;
+    margin-right: 25px;
+  }
+  .navbar-item ul li a {
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .navbar-item ul li a:hover {
+    color: rgb(251, 22, 22);
+    background-color: rgb(220, 244, 100);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .navbar-btn {
+    display: none;
+  }
+  /* Navbar End */
+  /* Popup start */
+  .popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+  }
+
+  .popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 650px;
+    height: 320px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    box-shadow: 0.5px 0.5px 0.5px 1px #2e3435;
+  }
+
+  .popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    background: rgb(248, 60, 60);
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  .popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .pop-head {
+    font-size: 35px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .span-1 {
+    color: red;
+  }
+  .span-2 {
+    color: #4b67f6;
+  }
+  .span-3 {
+    color: rgb(226, 226, 86);
+  }
+  .drop-select {
+    color: gray;
+    border: 2px #4b67f6 solid;
+    box-shadow: 2px -3px #7de1fa;
+    width: 100%;
+    padding: 1em;
+  }
+  .pop-form {
+    padding: 0.2em;
+    width: 100%;
+    margin: 5px;
+  }
+  .pop-form input {
+    padding: 1em;
+    width: 40%;
+    margin-right: 20px;
+  }
+
+  .pop-form2 input {
+    width: 40%;
+    padding: 1em;
+    margin-right: 30px;
+  }
+  .pop-form2 button {
+    width: 40%;
+    padding: 0.5em;
+    margin-right: 30px;
+    background-color: green;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 2px 3px #8de496;
+  }
+  /* Popup End */
+  /* Grid Img start */
+  .img-main {
+    margin-top: 0.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row: 5px;
+    gap: -50rem;
+  }
+
+  .img-main div img {
+    box-shadow: 1px 1px 4px 0 rgb(2, 2, 2);
+  }
+
+  .item2 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  /* Grid Img End */
+  /* Button start */
+  .btn-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+    margin: 20px;
+  }
+
+  .soft-btn,
+  .account-btn,
+  .certificate-btn {
+    border: 2px solid #3640fc;
+    margin-right: 30px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #4949c2;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .soft-btn:hover,
+  .account-btn:hover,
+  .certificate-btn:hover {
+    background-color: #fc3636;
+    color: #f9f905e2;
+    border: 2px solid #f9f905e2;
+    text-decoration: underline;
+  }
+  /* Button End */
+  /* recognised & img start */
+  .recog {
+    font-family: sans-serif;
+    text-align: center;
+    color: #3640fc;
+    font-size: 18px;
+  }
+
+  .img-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  /* recognised & img End */
+
+  /* Ecfile start */
+  .ec-ad {
+    float: left;
+    margin-left: 2rem;
+    padding: 2rem;
+  }
+
+  .ec-head-ad {
+    color: red;
+    font-size: 25px;
+
+    font-family: "Roboto", sans-serif;
+  }
+
+  .ec-head-box {
+    border: 1px solid rgb(71, 67, 67);
+    padding: 8px;
+    box-shadow: 1px 1px 4px 0 rgb(2, 2, 2);
+  }
+  .ec-head-box img {
+    margin-left: 7px;
+  }
+
+  .ec-head-box p {
+    color: rgb(246, 44, 44);
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 450;
+    margin-top: 5px;
+  }
+
+  .ec-head-box p span {
+    font-size: 25px;
+    color: rgb(239, 22, 22);
+  }
+
+  #ec-num {
+    color: #3640fc;
+    font-size: 35px;
+    margin-left: 20px;
+    width: fit-content;
+  }
+
+  #ec-link {
+    color: rgb(40, 118, 152);
+    font-size: 25px;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: -35px;
+    margin-left: 15px;
+  }
+
+  #ec-amnt {
+    color: rgb(223, 45, 45);
+    font-size: 35px;
+    margin-top: -15px;
+  }
+
+  .ec-ad-right {
+    padding: 2rem;
+  }
+
+  .ec-ad-right h2 {
+    color: rgb(248, 38, 38);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
+  .ec-ad-right h2 span {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(227, 32, 32);
+    font-family: "Poppins", sans-serif;
+  }
+  .ec-ad-right p {
+    font-size: 25px;
+    color: rgb(57, 57, 57);
+    font-family: "Poppins", sans-serif;
+    margin-right: 5rem;
+  }
+
+  #head-ul {
+    display: flex;
+    margin-top: 30px;
+    padding: 40px;
+    justify-content: center;
+  }
+
+  #head-ul li {
+    border: 2px solid rgb(182, 220, 244);
+    background-color: rgb(182, 220, 244);
+    border-radius: 10px;
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 25px;
+    padding: 15px;
+    width: 120px;
+    height: 80px;
+    color: #3640fc;
+    font-weight: bold;
+    text-align: center;
+  }
+  /* Ecfile End */
+  /* Free Gst Registration end */
+
+  #fssai-head {
+    margin-top: 12rem;
+    font-family: "Roboto", sans-serif;
+  }
+  .fssai-img {
+    border: 1px solid rgb(71, 67, 67);
+    padding: 2px;
+    box-shadow: 1px 1px 4px 0 rgb(2, 2, 2);
+    border-radius: 5px;
+  }
+  .fssai-h3 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(34, 34, 34, 0.926);
+    margin-top: -25px;
+  }
+  .fssai-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .fssai-content img {
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+  }
+  .fssai-content p {
+    color: rgb(81, 78, 78);
+    margin-left: 3rem;
+    font-size: 21px;
+  }
+  .fssai-content p span {
+    color: #4949c2;
+  }
+
+  .filing h3 {
+    color: blue;
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .filing h3 span {
+    color: #fc3636;
+    font-size: 15px;
+  }
+  .filing p {
+    color: rgb(81, 78, 78);
+    margin-left: 3rem;
+    font-size: 21px;
+    margin-top: -10px;
+  }
+  /* fssai end */
+
+  /* gst software start */
+  .gst-soft {
+    float: inline-start;
+  }
+
+  .gst-soft h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    color: rgb(96, 94, 94);
+  }
+
+  .gst-flex {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25%;
+    gap: 5rem;
+  }
+
+  .gst-flex img {
+    margin-top: 5rem;
+    margin-left: 40px;
+  }
+
+  .gst-flex p {
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  /* Free Gst Registration start */
+  /* Ec start */
+
+  #ecstart {
+    margin-top: -3rem;
+  }
+  .ec {
+    text-align: center;
+    margin-left: 15rem;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(128, 164, 136);
+    font-weight: 100;
+    margin-top: -30px;
+  }
+
+  .ec span {
+    color: rgb(30, 84, 30);
+  }
+  .ec-start {
+    color: rgb(156, 46, 46);
+  }
+  #ec-start {
+    color: rgba(89, 88, 88, 0.96);
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  .side-head {
+    text-align: center;
+    color: rgba(128, 128, 128, 0.792);
+    font-weight: 100;
+  }
+  .side-li {
+    margin-left: 15rem;
+    font-size: 18px;
+    color: rgba(89, 88, 88, 0.96);
+  }
+
+  #ice-reg {
+    padding-top: 30rem;
+  }
+  #ice-imp {
+    font-size: 16px;
+    color: rgba(89, 88, 88, 0.96);
+    margin-top: -10px;
+  }
+
+  #ice-imp span {
+    border: 1px solid rgb(255, 85, 0);
+    background-color: rgb(225, 82, 42);
+    font-size: 7px;
+    padding: 2px;
+    border-radius: 2px;
+    color: black;
+  }
+
+  #ice-exp {
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(94, 90, 90, 0.96);
+    margin-top: -10px;
+    font-family: "Nunito", sans-serif;
+  }
+
+  #register {
+    font-size: 25px;
+    margin-top: 5px;
+    font-weight: 100;
+    color: rgb(53, 53, 53);
+  }
+
+  #qus-mark {
+    margin-left: 30rem;
+    margin-top: -3rem;
+  }
+
+  #qus-mark ol {
+    color: gray;
+    padding: 2rem;
+    padding-left: 0;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 450;
+  }
+
+  #qus-mark ol span {
+    color: rgb(239, 32, 32);
+    font-size: 10px;
+  }
+  #reg-para {
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(94, 90, 90, 0.96);
+    margin-top: -10px;
+    margin-left: 30%;
+    font-family: "Nunito", sans-serif;
+  }
+  #digi-sign {
+    margin-top: -8rem;
+  }
+  #digi-sign h3 {
+    font-size: 22px;
+  }
+  #digi-img {
+    margin-left: 5%;
+  }
+  /* Ec End */
+  /* Virtual acc start */
+  #virtual-acc {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: rgb(96, 94, 94);
+    margin-top: -20px;
+  }
+
+  #acc-list {
+    padding-left: 12rem;
+    margin-top: -1rem;
+  }
+
+  .free-reg {
+    color: #3640fc;
+    margin-left: 30%;
+  }
+
+  .free-reg span {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+  }
+  .free-reg p {
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(94, 90, 90, 0.96);
+    margin-top: 5px;
+    font-family: "Nunito", sans-serif;
+  }
+  #bill-soft {
+    text-align: center;
+    margin-left: 10px;
+    font-size: 27px !important;
+  }
+  /* Virtual acc end */
+  /* Account software start */
+  #acc-soft {
+    font-weight: 100;
+    font-size: 30px;
+    color: rgb(65, 64, 64);
+    font-family: "Nunito", sans-serif;
+    margin-top: -4rem;
+  }
+
+  #digi-sign1 {
+    margin-top: 3rem;
+  }
+
+  #acc-soft-para {
+    font-size: 17px;
+    margin-top: 5rem;
+    color: rgba(94, 90, 90, 0.96);
+    font-family: "Nunito", sans-serif;
+  }
+  #acc-soft-para span {
+    color: #fc3636;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  #enter-solu {
+    margin-left: 30%;
+    margin-top: -2rem;
+  }
+
+  #enter-solu-para {
+    font-size: 1.1em;
+    margin-top: -3rem;
+    color: rgba(94, 90, 90, 0.96);
+    font-family: "Nunito", sans-serif;
+  }
+  /* Account software end */
+  /* our service start */
+  #ser-para {
+    font-size: 1.2em;
+    color: rgba(94, 90, 90, 0.96);
+    font-family: "Nunito", sans-serif;
+  }
+  #iso {
+    margin-right: 30px;
+  }
+
+  .service-flex {
+    margin-left: 25%;
+    display: flex;
+  }
+
+  .btn-0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+    margin: 20px;
+    gap: 5rem;
+    margin-left: 25%;
+    margin-top: -2rem;
+  }
+
+  .btn {
+    border: 2px solid black;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #545492;
+    width: 30%;
+  }
+
+  .btn p {
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    margin: auto;
+  }
+  .btn p:hover {
+    cursor: pointer;
+    color: #e3eb74a2;
+    text-decoration: underline;
+  }
+  #btn1 {
+    background-color: #4949c2;
+  }
+
+  #btn2 {
+    background-color: #215d25;
+  }
+
+  #btn3 {
+    background-color: #31ec56;
+  }
+
+  #btn4 {
+    background-color: #633259;
+  }
+  #btn5 {
+    background-color: #7070c1;
+  }
+  #btn6 {
+    background-color: #49a4d9;
+  }
+  #btn7 {
+    background-color: #1717bd;
+  }
+  #btn8 {
+    background-color: #fd2222;
+  }
+  #btn9 {
+    background-color: #77721fa9;
+  }
+  #btn10 {
+    background-color: #1e1e8b66;
+  }
+  /* our service end */
+  /* fssai lincence start */
+
+  #bsi {
+    margin-top: -8rem;
+  }
+
+  #bsi-isi {
+    font-weight: 100;
+    font-size: 28px;
+    color: rgb(41, 96, 151);
+    font-family: "Nunito", sans-serif;
+    margin-top: -6rem;
+    margin-left: 15rem;
+  }
+  #bsi-isi:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .licence {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    gap: 5rem;
+  }
+
+  .licence p {
+    font-size: 1.3em;
+    color: rgba(94, 90, 90, 0.96);
+    font-family: "Nunito", sans-serif;
+  }
+
+  .licence-padd {
+    margin-top: 7rem;
+  }
+
+  .licence-margin {
+    margin-left: 25%;
+    margin-top: 7rem;
+  }
+
+  /* fssai lincence end */
+  /* main end */
+
+  /* our partner start */
+  .partner {
+    margin-top: 30px;
+    text-align: center;
+    color: #4949c2;
+    font-weight: 100;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+  }
+  .partner-logo {
+    margin-left: 20%;
+  }
+  .partner-logo img {
+    margin-right: 2rem;
+  }
+  /* our partner end */
+
+  /* footer start */
+  .footer {
+    margin-top: 30px;
+    background-color: #6565dd;
+  }
+  .footer .box-container {
+    display: grid;
+    margin-left: 10%;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+  }
+  .footer .box-container .box h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: -3px;
+    font-family: "Nunito", sans-serif;
+  }
+  .footer .box-container .box a {
+    color: #fff;
+    font-size: 0.9rem;
+    display: block;
+    padding-left: 15px;
+    font-family: "Nunito", sans-serif;
+  }
+  .footer .box-container .box a:hover {
+    text-decoration: underline;
+    color: #1717bd;
+  }
+
+  /* footer end */
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  /* Navbar Start */
+  nav {
+    background-color: rgb(120, 132, 170);
+  }
+  .navbar-item ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .navbar-item ul li {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 255);
+
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .navbar-item ul a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+  }
+  .navbar-btn {
+    border: none;
+    background: none;
+    border: 1px solid white;
+    padding: 5px;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    cursor: pointer;
+  }
+  .navbar-btn span {
+    display: block;
+    width: 20px;
+    border-top: 1px solid white;
+  }
+  .navbar-btn span:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .hide {
+    display: none;
+  }
+  /* Navbar End */
+  /* popup */
+  .popup {
+    display: none;
+  }
+  /* Grid Img start */
+  .img-main img {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px 0 rgb(2, 2, 2);
+  }
+
+  .item2 {
+    display: none;
+  }
+  /* Grid Img End */
+  /* Button start */
+  .btn-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  .soft-btn,
+  .account-btn,
+  .certificate-btn {
+    border: 2px solid #3640fc;
+    margin-right: 30px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #4949c2;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .soft-btn:hover,
+  .account-btn:hover,
+  .certificate-btn:hover {
+    background-color: #fc3636;
+    color: #f9f905e2;
+    border: 2px solid #f9f905e2;
+    text-decoration: underline;
+  }
+  /* Button End */
+  /* recognised img start */
+
+  .recog {
+    font-family: sans-serif;
+    text-align: center;
+    color: #3640fc;
+    font-size: 16px;
+  }
+  .partner-logo {
+    margin-left: 20%;
+  }
+  .partner-logo img {
+    margin-right: 2rem;
+    margin-top: 30px;
+    align-items: center;
+  }
+  #startup {
+    height: 50px;
+  }
+  /* recognised img End */
+  /* Ecfile start */
+  .ec-ad {
+    display: none;
+  }
+
+  .ec-ad-right h2 {
+    color: rgb(248, 38, 38);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  .ec-ad-right h2 span {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(227, 32, 32);
+    font-family: "Poppins", sans-serif;
+  }
+  .ec-ad-right p {
+    font-size: 15px;
+    color: rgb(57, 57, 57);
+    font-family: "Poppins", sans-serif;
+  }
+
+  #head-ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    justify-content: center;
+  }
+  #head-ul li {
+    border: 2px solid rgb(182, 220, 244);
+    background-color: rgb(182, 220, 244);
+    border-radius: 10px;
+    list-style: none;
+    margin-left: 5px;
+    margin-right: 15px;
+    padding: 10px;
+    width: 120px;
+    height: 80px;
+    color: #3640fc;
+    font-weight: bold;
+    text-align: center;
+  }
+  /* Ecfile end */
+  /* Free gst Registration Start */
+
+  .fssai-h3 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(34, 34, 34, 0.926);
+    margin-top: -15px;
+  }
+  .fssai-content img {
+    width: 75%;
+    height: 25%;
+    margin-left: 10%;
+    margin-bottom: 1rem;
+  }
+
+  .fssai-content p {
+    color: rgb(81, 78, 78);
+    margin-left: 0.5rem;
+    font-size: 15px;
+  }
+  .fssai-content p span {
+    color: #4949c2;
+  }
+
+  .filing h3 {
+    color: blue;
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .filing h3 span {
+    color: #fc3636;
+    font-size: 10px;
+  }
+
+  .filing p {
+    color: rgb(81, 78, 78);
+    margin-left: 0.5rem;
+    font-size: 15px;
+    margin-top: -10px;
+  }
+  /* gst software start */
+  .gst-soft {
+    float: inline-start;
+  }
+
+  .gst-soft h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+    color: rgb(96, 94, 94);
+  }
+
+  .gst-flex img {
+    width: 75%;
+    height: 25%;
+    margin-left: 10%;
+    margin-bottom: 1rem;
+  }
+
+  .gst-flex p {
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    margin-left: 0.5rem;
+  }
+  /* Free gst Registration End */
+  /* Ec Start */
+  /* EcStart */
+
+  .ec {
+    text-align: center;
+    margin-left: 0.5rem;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(128, 164, 136);
+    font-weight: 100;
+  }
+
+  .ec span {
+    color: rgb(30, 84, 30);
+  }
+  .ec-start {
+    color: rgb(156, 46, 46);
+  }
+  #ec-start {
+    color: rgba(89, 88, 88, 0.96);
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    margin-left: 0.5rem;
+  }
+
+  .side-head {
+    text-align: center;
+    color: rgba(128, 128, 128, 0.792);
+    font-weight: 100;
+  }
+  .side-li {
+    color: rgba(89, 88, 88, 0.96);
+  }
+  #ice-imp {
+    font-size: 16px;
+    color: rgba(89, 88, 88, 0.96);
+    margin-top: -10px;
+    margin-left: 0.7rem;
+  }
+
+  #ice-imp span {
+    border: 1px solid rgb(255, 85, 0);
+    background-color: rgb(225, 82, 42);
+    font-size: 7px;
+    padding: 2px;
+    border-radius: 2px;
+    color: black;
+  }
+
+  #ice-exp {
+    font-size: 17px;
+    font-weight: 300;
+    color: rgba(94, 90, 90, 0.96);
+    margin-top: -10px;
+    margin-left: 0.5rem;
+    font-family: "Nunito", sans-serif;
+  }
+  /* register */
+  #register {
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 200;
+    color: rgb(53, 53, 53);
+  }
+  #qus-mark {
+    width: 75%;
+    height: 15%;
+    margin-left: 10%;
+  }
+  #qus-mark ol {
+    color: gray;
+    margin-left: 0.5rem;
+    padding-left: 0;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 250;
+  }
+
+  #qus-mark ol span {
+    color: rgb(239, 32, 32);
+    font-size: 8px;
+  }
+  #reg-para {
+    font-size: 16px;
+    font-weight: 200;
+    color: rgba(94, 90, 90, 0.96);
+    margin-top: -10px;
+    margin-left: 0.5rem;
+    font-family: "Nunito", sans-serif;
+  }
+  /* Ec End */
+
+  /* Virtual acc start */
+  #virtual-acc {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: rgb(96, 94, 94);
+    margin-top: -10px;
+  }
+  .free-reg {
+    color: #3640fc;
+    margin-left: 0.5rem;
+  }
+  .free-reg span {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+  }
+  .free-reg p {
+    font-size: 16px;
+    font-weight: 200;
+    color: rgba(94, 90, 90, 0.96);
+    margin-top: 5px;
+    font-family: "Nunito", sans-serif;
+  }
+  /* Virtual acc End */
+  /* Account software start */
+  #acc-soft {
+    font-weight: 100;
+    font-size: 16px;
+    color: rgb(65, 64, 64);
+    font-family: "Nunito", sans-serif;
+    margin-left: 0;
+  }
+  #acc-soft-para {
+    margin-top: -20px;
+    font-size: 16px;
+    margin-left: 0.5rem;
+    color: rgba(94, 90, 90, 0.96);
+    font-family: "Nunito", sans-serif;
+  }
+  #acc-soft-para span {
+    color: #fc3636;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  /* Account software end */
+  /* our service start*/
+  #ser-para {
+    font-size: 1em;
+    color: rgba(94, 90, 90, 0.96);
+    font-family: "Nunito", sans-serif;
+  }
+  .btn-0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px;
+    margin: 10px;
+    gap: 2rem;
+    margin-left: 5%;
+    margin-top: -0.5rem;
+  }
+  .btn {
+    border: 1px solid black;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #545492;
+    width: 30%;
+  }
+
+  .btn p {
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    margin: auto;
+  }
+  .btn p:hover {
+    cursor: pointer;
+    color: #e3eb74a2;
+    text-decoration: underline;
+  }
+  #btn1 {
+    background-color: #4949c2;
+  }
+
+  #btn2 {
+    background-color: #215d25;
+  }
+
+  #btn3 {
+    background-color: #31ec56;
+  }
+
+  #btn4 {
+    background-color: #633259;
+  }
+  #btn5 {
+    background-color: #7070c1;
+  }
+  #btn6 {
+    background-color: #49a4d9;
+  }
+  #btn7 {
+    background-color: #1717bd;
+  }
+  #btn8 {
+    background-color: #fd2222;
+  }
+  #btn9 {
+    background-color: #77721fa9;
+  }
+  #btn10 {
+    background-color: #1e1e8b66;
+  }
+  /* our service end */
+  /* fssai lincence start */
+
+  #bsi-isi {
+    font-weight: 100;
+    font-size: 18px;
+    color: rgb(41, 96, 151);
+    font-family: "Nunito", sans-serif;
+    margin-left: 0.5rem;
+  }
+  #bsi-isi:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .licence {
+    margin-right: 20px;
+    gap: 5rem;
+  }
+  .licence img {
+    box-shadow: 1px 1px 4px 0 rgb(2, 2, 2);
+    width: 75%;
+    height: 25%;
+    margin-left: 10%;
+    margin-bottom: 1rem;
+  }
+  .licence p {
+    margin-left: 0.5rem;
+    font-size: 1em;
+    color: rgba(94, 90, 90, 0.96);
+    font-family: "Nunito", sans-serif;
+  }
+  /* fssai lincence end */
+
+  /* our partner start */
+  .partner {
+    text-align: center;
+    color: #4949c2;
+    font-weight: 100;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+  }
+  /* our partner end */
+  /* footer start */
+  .footer {
+    background-color: #6565dd;
+    margin-top: 10px;
+  }
+  .footer .box-container {
+    display: grid;
+    margin-left: 10%;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+  }
+  .footer .box-container .box h3 {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: -3px;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+  }
+  .footer .box-container .box a {
+    color: #fff;
+    font-size: 0.7rem;
+    display: block;
+    padding-left: 15px;
+    font-family: "Nunito", sans-serif;
+    margin-left: 2rem;
+  }
+  .footer .box-container .box a:hover {
+    text-decoration: underline;
+    color: #1717bd;
+  }
+  /* Footer end */
+}

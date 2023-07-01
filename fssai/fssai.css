@@ -1,0 +1,653 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+nav {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+/* Desktop */
+
+@media (min-width: 600px) {
+  /* Navbar Start */
+  .navbar-item {
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+
+  .navbar-item ul li {
+    display: inline;
+    margin-right: 25px;
+  }
+  .navbar-item ul li a {
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .navbar-item ul li a:hover {
+    color: rgb(251, 22, 22);
+    background-color: rgb(220, 244, 100);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .navbar-btn {
+    display: none;
+  }
+  /* Navbar End */
+  /* Main Start */
+
+  /* Fssai Service start */
+  .ec-ad {
+    float: left;
+    margin-left: 2rem;
+    padding: 2rem;
+  }
+
+  .ec-ad-1 {
+    float: left;
+    padding: 2rem;
+    margin-top: 5em;
+  }
+  .ec-head-ad {
+    color: red;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+  }
+  .fssai-img {
+    border: 1px solid rgb(71, 67, 67);
+    padding: 2px;
+    box-shadow: 1px 1px 4px 0 rgb(2, 2, 2);
+    border-radius: 5px;
+  }
+
+  .ec-ad-right {
+    padding: 2rem;
+  }
+  .ec-ad-right h4 {
+    text-align: right;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Times New Roman", Times, serif;
+  }
+  h4 span {
+    color: rgb(68, 86, 255);
+  }
+  .head {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(55, 68, 184);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  #sub-head {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(68, 86, 255);
+  }
+  .con-img {
+    margin-left: 30%;
+    margin-top: 20px;
+  }
+  #para {
+    font-size: 16px;
+    color: rgb(57, 57, 57);
+    font-family: "Poppins", sans-serif;
+    margin-right: 5rem;
+  }
+  #para-2 {
+    margin-left: 23%;
+    font-size: 16px;
+    color: rgb(57, 57, 57);
+    font-family: "Poppins", sans-serif;
+    margin-right: 5rem;
+  }
+  .ec-ad-right h2 {
+    color: rgb(248, 38, 38);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
+  .ec-ad-right h2 span {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(227, 32, 32);
+    font-family: "Poppins", sans-serif;
+  }
+  .ec-ad-right p {
+    font-size: 25px;
+    color: rgb(57, 57, 57);
+    font-family: "Poppins", sans-serif;
+    margin-right: 5rem;
+  }
+
+  #head-ul-1 {
+    display: flex;
+    margin-top: 30px;
+    padding: 40px;
+    justify-content: center;
+  }
+
+  #head-ul-1 li {
+    border: 2px solid rgb(199, 233, 255);
+    background-color: rgb(97, 212, 84);
+    box-shadow: 1px 1px 4px 0 rgb(2, 2, 2);
+    border-radius: 10px;
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 25px;
+    padding: 15px;
+    width: 120px;
+    height: 80px;
+    color: #3640fc;
+    font-weight: bold;
+    text-align: center;
+  }
+  #head-ul-1 li button {
+    background-color: rgb(233, 28, 28);
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  form {
+    width: 20%;
+    margin-left: 50%;
+    padding: 10px;
+  }
+  form label {
+    font-size: 20px;
+    color: #3a12cb;
+    font-weight: 700;
+  }
+
+  form input {
+    padding: 15px;
+    width: 80%;
+    border-radius: 5px;
+    border-color: #8e92e8;
+    margin-bottom: 25px;
+  }
+  form select {
+    padding: 15px;
+    width: 90%;
+    border-radius: 5px;
+    border-color: #8e92e8;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  select option {
+    color: red;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+    border-color: #4c53e6;
+  }
+  form button {
+    color: whitesmoke;
+    background: #3640fc;
+    margin-left: 20%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .card-flex {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .card {
+    box-shadow: 1px 1px 4px 0 rgb(7, 65, 32);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: rgb(76, 207, 76);
+    border-radius: 10px;
+  }
+
+  .card h1 {
+    background-color: green;
+    padding: 20px;
+    color: #fff;
+  }
+  .card p {
+    color: #fff;
+    font-size: 18px;
+    text-align: start;
+    margin-left: 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: 800;
+  }
+  .card button {
+    padding: 5px;
+    color: white;
+    background-color: #e12626;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+  table {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  th,
+  td {
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f0c4cc;
+  }
+  tr:nth-child(odd) {
+    background-color: #dfccce46;
+  }
+  /* fssai service End */
+  /* Main End */
+  /* our partner start */
+  .partner {
+    margin-top: 30px;
+    text-align: center;
+    color: #4949c2;
+    font-weight: 100;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+  }
+  .partner-logo {
+    margin-left: 20%;
+  }
+  .partner-logo img {
+    margin-right: 2rem;
+  }
+  /* our partner end */
+  /* footer start */
+  .btn {
+    color: #fff;
+    margin-left: 45%;
+    padding: 10px;
+    background: #3640fc;
+    position: sticky;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .footer {
+    margin-top: 30px;
+    background-color: #6565dd;
+  }
+  .footer .box-container {
+    display: grid;
+    margin-left: 10%;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+  }
+  .footer .box-container .box h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: -3px;
+    font-family: "Nunito", sans-serif;
+  }
+  .footer .box-container .box a {
+    color: #fff;
+    font-size: 0.9rem;
+    display: block;
+    padding-left: 15px;
+    font-family: "Nunito", sans-serif;
+  }
+  .footer .box-container .box a:hover {
+    text-decoration: underline;
+    color: #1717bd;
+  }
+
+  /* footer end */
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  /* Navbar Start */
+  nav {
+    background-color: rgb(120, 132, 170);
+  }
+  .navbar-item ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .navbar-item ul li {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 255);
+
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .navbar-item ul a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+  }
+  .navbar-btn {
+    border: none;
+    background: none;
+    border: 1px solid white;
+    padding: 5px;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    cursor: pointer;
+  }
+  .navbar-btn span {
+    display: block;
+    width: 20px;
+    border-top: 1px solid white;
+  }
+  .navbar-btn span:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .hide {
+    display: none;
+  }
+  /* Navbar End */
+  /* Main Start */
+  /* Fassi Service start */
+  .ec-ad {
+    display: none;
+  }
+
+  .ec-ad-right h4 {
+    text-align: right;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Times New Roman", Times, serif;
+    margin-right: 5px;
+  }
+  h4 span {
+    color: rgb(68, 86, 255);
+  }
+  .head {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(55, 68, 184);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  #sub-head {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(68, 86, 255);
+  }
+
+  .con-img {
+    margin-left: 30%;
+    margin-top: 20px;
+    width: 30%;
+    height: 30%;
+  }
+
+  #para {
+    font-size: 16px;
+    color: rgb(57, 57, 57);
+    font-family: "Poppins", sans-serif;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  #para-2 {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: rgb(57, 57, 57);
+    font-family: "Poppins", sans-serif;
+  }
+
+  .ec-ad-right h2 {
+    color: rgb(248, 38, 38);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  .ec-ad-right h2 span {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(227, 32, 32);
+    font-family: "Poppins", sans-serif;
+  }
+  .ec-ad-right p {
+    font-size: 15px;
+    color: rgb(57, 57, 57);
+    font-family: "Poppins", sans-serif;
+  }
+
+  #head-ul-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    justify-content: center;
+  }
+  #head-ul-1 li {
+    border: 2px solid rgb(199, 233, 255);
+    background-color: rgb(97, 212, 84);
+    box-shadow: 1px 1px 4px 0 rgb(2, 2, 2);
+    border-radius: 10px;
+    list-style: none;
+    margin-left: 5px;
+    margin-right: 15px;
+    padding: 10px;
+    width: 120px;
+    height: 80px;
+    color: #3640fc;
+    font-weight: bold;
+    text-align: center;
+  }
+  #head-ul-1 li button {
+    background-color: rgb(233, 28, 28);
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  form {
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  form label {
+    margin-left: 20%;
+    font-size: 20px;
+    color: #3a12cb;
+    font-weight: 700;
+  }
+
+  form input {
+    margin-left: 20%;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #8e92e8;
+    margin-bottom: 5px;
+  }
+  form select {
+    margin-left: 20%;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #8e92e8;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  select option {
+    color: red;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+    border-color: #4c53e6;
+  }
+
+  form button {
+    color: whitesmoke;
+    background: #3640fc;
+    margin-left: 30%;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 100;
+  }
+
+  .card-flex {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .card {
+    box-shadow: 1px 1px 4px 0 rgb(7, 65, 32);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: rgba(93, 76, 207, 0.77);
+    border-radius: 10px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+
+  .card h1 {
+    background-color: rgb(38, 15, 156);
+    padding: 20px;
+    color: #fff;
+  }
+  .card p {
+    color: #fff;
+    font-size: 18px;
+    text-align: start;
+    margin-left: 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: 800;
+  }
+  .card button {
+    padding: 5px;
+    color: white;
+    background-color: #e12626;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+  .ec-head-ad,
+  .fssai-img {
+    display: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  th,
+  td {
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f0c4cc;
+  }
+  tr:nth-child(odd) {
+    background-color: #dfccce46;
+  }
+  /* Fssai service end */
+
+  /* Main End */
+
+  /* fssai lincence end */
+  /* our partner start */
+  .partner {
+    text-align: center;
+    color: #4949c2;
+    font-weight: 100;
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+  }
+  .partner-logo {
+    margin-left: 20%;
+  }
+  .partner-logo img {
+    margin-right: 2rem;
+    margin-top: 30px;
+    align-items: center;
+  }
+  /* our partner end */
+  /* footer start */
+  .btn {
+    margin-left: 30%;
+    color: #fff;
+    padding: 5px;
+    background: #3640fc;
+    position: sticky;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .footer {
+    background-color: #6565dd;
+    margin-top: 10px;
+  }
+  .footer .box-container {
+    display: grid;
+    margin-left: 10%;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+  }
+  .footer .box-container .box h3 {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: -3px;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+  }
+  .footer .box-container .box a {
+    color: #fff;
+    font-size: 0.7rem;
+    display: block;
+    padding-left: 15px;
+    font-family: "Nunito", sans-serif;
+    margin-left: 2rem;
+  }
+  .footer .box-container .box a:hover {
+    text-decoration: underline;
+    color: #1717bd;
+  }
+  /* Footer end */
+}
